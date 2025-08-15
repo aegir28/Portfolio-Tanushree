@@ -1,0 +1,198 @@
+Dr. Tanushree Chakraborty,
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanushree - Web Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .glass-effect {
+            background: rgba(23, 23, 23, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-glow {
+            background-image: radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3),rgba(255,255,255,0));
+        }
+        .btn-primary {
+            @apply bg-indigo-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105;
+        }
+        .btn-secondary {
+            @apply bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-600 transition-all duration-300 ease-in-out transform hover:scale-105;
+        }
+        .section-title {
+            @apply text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="glass-effect sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">T.</a>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="#about" class="hover:text-indigo-400 transition-colors duration-300">About</a></li>
+                <li><a href="#projects" class="hover:text-indigo-400 transition-colors duration-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-indigo-400 transition-colors duration-300">Contact</a></li>
+            </ul>
+            <a href="#contact" class="hidden md:block btn-primary px-5 py-2">Hire Me</a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="px-6 pb-4 flex flex-col space-y-4">
+                <li><a href="#about" class="block hover:text-indigo-400">About</a></li>
+                <li><a href="#projects" class="block hover:text-indigo-400">Projects</a></li>
+                <li><a href="#contact" class="block hover:text-indigo-400">Contact</a></li>
+                <li><a href="#contact" class="btn-primary w-full text-center mt-2">Hire Me</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+<!-- Hero Section -->
+        <section id="home" class="hero-glow min-h-screen flex flex-col justify-center items-center text-center -mt-16">
+            <h1 class="text-5xl md:text-7xl font-black mb-4 leading-tight">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">Creative</span> Web Developer
+
+Dr. Tanushree Chakraborty, [15-08-2025 09:59]
+</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mb-8">
+                I build beautiful, responsive, and user-friendly websites that solve real-world problems. Let's create something amazing together.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="/resume.pdf" class="btn-secondary" download>Download CV</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <h2 class="section-title">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <img src="https://ik.imagekit.io/h7wxbqwqe/photo_2025-08-14_17-47-38.jpg" alt="Tanushree Portrait" class="rounded-full shadow-2xl mx-auto border-4 border-gray-800 w-64 h-64 object-cover">
+                </div>
+                <div class="md:w-2/3 text-lg text-gray-300 space-y-4">
+                    <p>
+                        Hello! I'm  Dr. Tanushree, a passionate doctor and side wise a web developer with a knack for turning ideas into dynamic web applications. With over 5 years of experience, I specialize in front-end development using modern technologies like React, Next.js, and Tailwind CSS.
+                    </p>
+                    <p>
+                        My journey in web development started with a simple "Hello, World!" and has since grown into a full-fledged passion for crafting elegant and efficient code. I'm a lifelong learner, always excited to explore new tools and frameworks.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <style>.skill-tag { @apply bg-gray-800 text-indigo-300 font-medium py-2 px-4 rounded-md; }</style>
+<!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="section-title">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="glass-effect rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1d4ed8/ffffff?text=Project+One" alt="Project One" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">E-Commerce Platform</h3>
+                        <p class="text-gray-400 mb-4">A full-featured e-commerce site built with Next.js, Stripe for payments, and Sanity for content management.</p>
+                        <a href="#" class="text-indigo-400 font-semibold hover:underline">View Details &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="glass-effect rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/059669/ffffff?text=Project+Two" alt="Project Two" class="w-full h-48 object-cover">
+                    <div class="p-6">
+
+Dr. Tanushree Chakraborty, [15-08-2025 09:59]
+<h3 class="text-2xl font-bold mb-2 text-white">Task Management App</h3>
+                        <p class="text-gray-400 mb-4">A collaborative task management tool with real-time updates using Firebase and React.</p>
+                        <a href="#" class="text-indigo-400 font-semibold hover:underline">View Details &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="glass-effect rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/d97706/ffffff?text=Project+Three" alt="Project Three" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Portfolio Website</h3>
+                        <p class="text-gray-400 mb-4">A personal portfolio website (like this one!) built to be fast, responsive, and SEO-friendly.</p>
+                        <a href="#" class="text-indigo-400 font-semibold hover:underline">View Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="glass-effect max-w-2xl mx-auto p-8 rounded-xl">
+                <p class="text-center text-lg text-gray-300 mb-8">
+                    Have a project in mind or just want to say hi? My inbox is always open. I'll get back to you as soon as possible!
+                </p>
+                <div class="text-center">
+                    <a href="mailto:noobtanu@aol.com" class="btn-primary text-xl">
+                        hello@noobtanu.dev
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Footer -->
+    <footer class="border-t border-gray-800 mt-20">
+        <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400">&copy; 2025 Tanushree. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <!-- Social Icons -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+Dr. Tanushree Chakraborty, [15-08-2025 09:59]
+<script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
